@@ -1,0 +1,79 @@
+.targets .discription{
+    color: var(--dark);
+    max-width: 600px;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.targets .boxes{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 3rem;
+    margin-top: 3rem;
+}
+
+.targets .box{
+    background-color: var(--box3);
+    color: var(--dark);
+    padding: 3rem;
+    border-radius: 1rem;
+    align-items: flex-start;
+}
+
+.targets .icon{
+    width: 60px;
+    margin-right: 3rem;
+}
+
+.targets .infos , .targets .skills_info{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.targets .skill_title{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.targets h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+/************ Responsive*************/
+
+@media screen and (max-width: 1200px) {
+    .targets .boxes{
+        grid-gap: 2rem;
+    }
+    .targets .box{
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .targets .skill_title{
+        font-weight: 500;
+        margin: 1rem 0;
+    }
+    .targets h3{
+        color: var(--dark);
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .targets{
+        margin-top: 5rem;
+    }
+    .targets .boxes {
+        grid-template-columns: 1fr;
+    }
+    .targets .discription{
+        text-align: start;
+    }
+
+}
